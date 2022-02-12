@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1*btw1c!ig53wjiwg2y_gs67j2e-79d(4^b@yw4g-=o@(t205a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'suyog-ojha.herokuapp.com'
@@ -153,6 +153,6 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = ""
 
 
-STATICFILES_DIRS = [BASE_DIR / "static"]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
